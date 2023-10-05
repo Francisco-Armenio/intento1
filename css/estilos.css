@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ebe8e8;
+}
+
+.nav{
+    margin-bottom:1rem;
+    background-color:#2e97b7;
+    padding:5px;
+    text-decoration:none;
+
+    position: sticky;
+    width:100%;
+
+    z-index:1;
+}
+
+.item-lista{
+    display: inline-block;
+    margin:10px;
+    
+}    
+
+.tarjetas{
+    margin: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.tarjeta{
+    background: rgba(128, 0, 6, 0.192);
+    padding: 10px;
+    border:3px solid purple;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+    grid-template-areas: 
+    "tarjeta1 tarjeta2"
+}
+
+.tarjeta1{
+    grid-area: tarjeta1;
+}
+
+.tarjeta2{
+    grid-area: tarjeta2;
+}
+
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "tarjeta6 tarjeta4 tarjeta5"
+    
+}
+
+.tarjeta3{
+    grid-area: tarjeta3;
+}
+
+.tarjeta4{
+    grid-area: tarjeta4;
+}
+
+.tarjeta5{
+   grid-area: tarjeta5; 
+}
+
+.tarjeta6{
+    grid-area: tarjeta6;
+}
+
+
+.hero{
+    background-image: url(../img/banner\ prueba.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__titulo{
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: .5rem;
+}
+
+.hero__boton{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.hero__boton{
+    text-decoration: none;
+    background-color: #116f8b;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.texto{
+    padding-inline: 3rem;
+    gap: 2rem;
+}
+
+.footer{
+    background-color: #6b9080;
+    padding-inline: 3rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
